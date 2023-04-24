@@ -49,6 +49,6 @@ def getAllERICRecords(search, fields = None, cleanElements = True):
         else:
             records = pd.concat([records, pd.DataFrame(dataFrame.loc['docs'][0])], sort=False, ignore_index=True)
         nextFirstRecord += numRecordsReturnedPerCall
-    print('Took', '{:,.lf}'.format(time.time()-startTime, 'seconds'))
+    print('Took', '{:,.1f}'.format(time.time() - startTime), 'seconds')
     return records.applymap(cleanElementsUsingList) if cleanElements else records
 
