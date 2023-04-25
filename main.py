@@ -1,6 +1,8 @@
 import ericAPIinterface
 
-search='author:Kasumi Yamazaki'
-records = ericAPIinterface.getAllERICRecords(search)
-records.head()
-records
+search='author: Megan Sizcek'
+fields=["title", "author", "description", "publicationdateyear"]
+records = ericAPIinterface.getAllERICRecords(search, fields)
+ericAPIinterface.saveToJSON(records, 'test2.json')
+# print(records.head())
+# print(records)

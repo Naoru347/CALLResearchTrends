@@ -9,7 +9,7 @@ def getERICRecords(search, fields = None, start=0, rows=200) :
     url = 'https://api.ies.ed.gov/eric/?'
     url = url + 'search=' + search + '&rows=' + str(rows) + '&format=json&start=' + str(start)
     if(fields):
-        url = url + '&fields' + ', '.join(fields)
+        url = url + '&fields=' + ', '.join(fields)
     responseJSON = requests.get(url).json()
     return pd.DataFrame(responseJSON)
 
@@ -51,4 +51,9 @@ def getAllERICRecords(search, fields = None, cleanElements = True):
         nextFirstRecord += numRecordsReturnedPerCall
     print('Took', '{:,.1f}'.format(time.time() - startTime), 'seconds')
     return records.applymap(cleanElementsUsingList) if cleanElements else records
+
+def saveToJSON(dataframe, file_name):
+    json_data = dataframe.to_json(orient='records')
+    with open(file_name, 'w') as json_file:
+        json_file.write(json_data)
 
