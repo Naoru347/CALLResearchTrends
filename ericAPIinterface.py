@@ -5,13 +5,13 @@ import json
 import time
 
 #Driver function to get records from the ERIC API
-def getERICRecords(search, fields = None, start=0, rows=200) : 
+def getERICRecords(search, fields = None, start=0, rows=200):
     url = 'https://api.ies.ed.gov/eric/?'
     url = url + 'search=' + search + '&rows=' + str(rows) + '&format=json&start=' + str(start)
     if(fields):
         url = url + '&fields=' + ', '.join(fields)
-    responseJSON = requests.get(url).json()
-    return pd.DataFrame(responseJSON)
+    responseJson = requests.get(url).json()
+    return pd.DataFrame(responseJson)
 
 '''
 Helper function to get records counts so that successive API calls
@@ -20,7 +20,7 @@ can iterate through the entire set of results for a specific search
 def getRecordCount(search):
     dataFrame = getERICRecords(search)
     totalRecords = dataFrame.loc['numFound'][0]
-    print('Search', search, 'return', '{:,}'.format(totalRecords), 'records')
+    print('Search', search, 'returned', '{:,}'.format(totalRecords), 'records')
     return totalRecords
 
 '''
@@ -49,6 +49,8 @@ def getAllERICRecords(search, fields = None, cleanElements = True):
         else:
             records = pd.concat([records, pd.DataFrame(dataFrame.loc['docs'][0])], sort=False, ignore_index=True)
         nextFirstRecord += numRecordsReturnedPerCall
+        progressPCT = 100 * nextFirstRecord / totalRecords
+        print(f"Progress:  {progressPCT:.1f}%, Retrieved: {nextFirstRecord}, Total: {totalRecords}")
     print('Took', '{:,.1f}'.format(time.time() - startTime), 'seconds')
     return records.applymap(cleanElementsUsingList) if cleanElements else records
 
