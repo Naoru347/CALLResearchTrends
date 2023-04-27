@@ -28,9 +28,9 @@ Takes input 'x', returns it unchanged if not a list, or returns a comma-separate
 string if it's an empty list or contains only an empty string.
 '''
 def cleanElementsUsingList(x): 
-    if(not isinstance(x, list)):
+    if not isinstance(x, list):
         return x
-    if(not x or (len(x) == 1 and x[0] == '')):
+    else:
         return ', '.join(x)
 
 #Helper function to get all results related to a specific search

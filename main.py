@@ -5,7 +5,7 @@ import time
 import os
 
 #search1
-search= 'author: `Kasumi Yamazaki`'
+search= 'author: Kasumi Yamazaki'
 fields=["author", "title", "description", "subject", "publicationdateyear", "source"]
 records= ericAPIinterface.getAllERICRecords(search, fields)
 ericAPIinterface.saveToJSON(records, 'data1.json')
