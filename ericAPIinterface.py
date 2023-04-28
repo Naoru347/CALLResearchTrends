@@ -55,7 +55,10 @@ def getAllERICRecords(search, fields = None, cleanElements = True):
     return records.applymap(cleanElementsUsingList) if cleanElements else records
 
 def saveToJSON(dataframe, file_name):
-    json_data = dataframe.to_json(orient='records')
-    with open(file_name, 'w') as json_file:
-        json_file.write(json_data)
+    if isinstance(dataframe, list) and not dataframe:
+        print("Empty dataframe, exiting.")
+    else:
+        json_data = dataframe.to_json(orient='records')
+        with open(file_name, 'w') as json_file:
+            json_file.write(json_data)
 
