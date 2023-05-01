@@ -1,7 +1,7 @@
 import json
 import os
 
-def combineFiles(files, output_file, unique_id_field):
+def combine_files(files, output_file, unique_id_field):
     combined_data = []
 
     # Read the content of each JSON file and append it to combined_data
