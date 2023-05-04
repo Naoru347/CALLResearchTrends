@@ -4,6 +4,7 @@ import requests
 import json
 import time
 
+
 #Driver function to get records from the ERIC API
 def getERICRecords(search, fields = None, start=0, rows=200):
     url = 'https://api.ies.ed.gov/eric/?'
