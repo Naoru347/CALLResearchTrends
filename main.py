@@ -7,8 +7,8 @@ import time
 import json
 
 #Run the searches
-# start_time = time.time()
-# records = Searches.run_searches()
+start_time = time.time()
+records = Searches.run_searches()
 
 #Data compilation
 print('Combining data files into single JSON file: combinedData.json')
@@ -23,15 +23,15 @@ CombineData.combine_files(json_files, output_file, unique_id_field)
 
 #Clean up repo
 print('Starting clean up routine')
-# Cleanup.cleanup()
-# time.sleep(10)
+Cleanup.cleanup()
+time.sleep(10)
 
 #Get total results count and program runtime
 with open('combinedData.json') as f:
     data = json.load(f)
 num_entries = len(data)
-# end_time = time.time() - start_time
+end_time = time.time() - start_time
 print('Total records return: ', num_entries)
-# print('Program runtime: ', end_time)
+print('Program runtime: ', end_time)
 # print(records.head())
 # print(records)
