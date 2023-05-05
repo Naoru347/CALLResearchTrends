@@ -16,4 +16,3 @@ def combine_files(files, output_file, unique_id_field):
     # Save the unique combined data to a new JSON file
     with open(output_file, 'w') as output:
         json.dump(list(unique_data), output)
-

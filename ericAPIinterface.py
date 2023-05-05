@@ -52,7 +52,7 @@ def getAllERICRecords(search, fields = None, cleanElements = True):
         nextFirstRecord += numRecordsReturnedPerCall
         progressPCT = 100 * nextFirstRecord / totalRecords
         print(f"Progress:  {progressPCT:.1f}%, Retrieved: {nextFirstRecord}, Total: {totalRecords}")
-    print('Took', '{:,.1f}'.format(time.time() - startTime), 'seconds')
+    print('Elapse time: ', '{:,.1f}'.format(time.time() - startTime), 'seconds')
     return records.applymap(cleanElementsUsingList) if cleanElements else records
 
 def saveToJSON(dataframe, file_name):
