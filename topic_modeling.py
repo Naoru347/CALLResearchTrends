@@ -28,18 +28,18 @@ print(df.head())
 column_names = df.columns.to_list()
 print(column_names)
 
-# # Begin topic modeling by creating the model
-# model = BERTopic(embedding_model="all-MiniLM-L6-v2")
-# docs = df.description.to_list()
-# topics, probabilities = model.fit_transform(docs)
-# model.get_topic_info()
+# Begin topic modeling by creating the model
+model = BERTopic(embedding_model="all-MiniLM-L6-v2")
+docs = df.description.to_list()
+topics, probabilities = model.fit_transform(docs)
+model.get_topic_info()
 
-# print(model.get_topic(1))
-# print(model.get_topic(2))
-# print(model.get_topic(3))
-# print(model.get_topic(4))
-# print(model.get_topic(5))
+print(model.get_topic(1))
+print(model.get_topic(2))
+print(model.get_topic(3))
+print(model.get_topic(4))
+print(model.get_topic(5))
 
-# # # Visualizations
-# model.visualize_topics()
-# model.visualize_barchart()
+# # Visualizations
+model.visualize_topics()
+model.visualize_barchart()
