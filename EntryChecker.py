@@ -2,6 +2,7 @@ import json
 
 # List of JSON files
 files = [
+    '2012_combinedData.json'
     '2013_combinedData.json',
     '2014_combinedData.json',
     '2015_combinedData.json',

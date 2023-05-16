@@ -16,7 +16,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Applied Linguistics AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Applied Linguistics AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data3.json')
@@ -51,7 +51,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Computer Assisted Instruction AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Computer Assisted Instruction AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data8.json')
@@ -86,7 +86,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Computer Mediated Communication AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Computer Mediated Communication AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data13.json')
@@ -121,7 +121,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Computer Simulation AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Computer Simulation AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data18.json')
@@ -156,7 +156,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Educational Technology AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Educational Technology AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data23.json')
@@ -191,7 +191,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: English(Second Language) AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: English(Second Language) AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data28.json')
@@ -226,7 +226,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: English as a Foreign Language Teachers AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: English as a Foreign Language Teachers AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data33.json')
@@ -261,7 +261,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: English as a Second Language Teachers AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: English as a Second Language Teachers AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data38.json')
@@ -296,7 +296,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Foreign Language Instruction AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Foreign Language Instruction AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data43.json')
@@ -331,7 +331,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Foreign Language Learning AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Foreign Language Learning AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data48.json')
@@ -366,7 +366,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Foreign Language Teachers AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Foreign Language Teachers AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data53.json')
@@ -401,7 +401,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Foreign Language Teaching AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Foreign Language Teaching AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data58.json')
@@ -436,7 +436,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Foreign Languages AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Foreign Languages AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data63.json')
@@ -471,7 +471,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Game Based Learning AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Game Based Learning AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data68.json')
@@ -506,7 +506,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Hypermedia AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Hypermedia AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data73.json')
@@ -541,7 +541,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Acquisition AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Acquisition AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data78.json')
@@ -576,7 +576,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Fluency AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Fluency AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data83.json')
@@ -611,7 +611,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Input AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Input AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data88.json')
@@ -646,7 +646,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Learning (Foreign) AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Learning (Foreign) AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data93.json')
@@ -681,7 +681,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Proficiency AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Proficiency AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data98.json')
@@ -716,7 +716,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Research AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Research AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data103.json')
@@ -751,7 +751,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Skills AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Skills AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data108.json')
@@ -786,7 +786,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Teachers AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Teachers AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data113.json')
@@ -821,7 +821,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Language Usage AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Language Usage AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data118.json')
@@ -856,7 +856,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Languages AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Languages AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data123.json')
@@ -891,7 +891,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Linguistic Competence AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Linguistic Competence AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data128.json')
@@ -926,7 +926,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Linguistic Input AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Linguistic Input AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data133.json')
@@ -961,7 +961,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Linguistic Research AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Linguistic Research AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data138.json')
@@ -996,7 +996,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Linguistics AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Linguistics AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data143.json')
@@ -1031,7 +1031,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Simulation AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Simulation AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data148.json')
@@ -1066,7 +1066,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Teaching Language AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Teaching Language AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data153.json')
@@ -1101,7 +1101,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Virtual Classrooms AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Virtual Classrooms AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data158.json')
@@ -1136,7 +1136,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Virtual Environments AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Virtual Environments AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data163.json')
@@ -1171,7 +1171,7 @@ def run_searches():
     print('Next API Search in 2 seconds.')
     time.sleep(2)
 
-    search= 'subject: Virtual Reality AND publicationdateyear: 2020 AND source: SYSTEM AND peerreviewed: T'
+    search= 'subject: Virtual Reality AND publicationdateyear: 2020 AND source: ISSN-0346-251X AND peerreviewed: T'
     fields=["id", "author", "title", "description", "subject", "publicationdateyear", "source", "identifiersgeo"]
     records= ericAPIinterface.getAllERICRecords(search, fields)
     ericAPIinterface.saveToJSON(records, 'data168.json')
